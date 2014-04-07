@@ -16,7 +16,7 @@
             <div ng-controller="treeCtrl">
                 <h1 class="page-header">Tree</h1>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <h3>
                             Tree view
                             <a href="" class="btn btn-default pull-right" ng-click="collapseAll()">Collapse all</a>
@@ -28,8 +28,9 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-9">
                         <h3>Contant</h3>
+                        <div class="ng-view"></div>
                     </div>
                 </div>
             </div>
@@ -37,7 +38,11 @@
         <script src="libs/jquery/dist/jquery.js"></script>
         <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
         <script src="libs/angular/angular.js"></script>
+        <script src="libs/angular-resource/angular-resource.js"></script>
+        <script src="libs/angular-route/angular-route.js"></script>
         <script src="libs/angular-ui-tree/dist/angular-ui-tree.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/controllers/tree-controller.js"></script>
+        <script src="js/services/tree-service.js"></script>
     </body>
 </html>

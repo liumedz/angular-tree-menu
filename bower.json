@@ -18,6 +18,8 @@
     "angular": "~1.2.16",
     "angular-ui-chart": "~0.0.1",
     "ui.bootstrap": "~0.10.0",
-    "angular-ui-tree": "~2.0.3"
+    "angular-ui-tree": "~2.0.3",
+    "angular-resource": "~1.2.16",
+    "angular-route": "~1.2.16"
   }
 }
