@@ -1,17 +1,43 @@
-<!doctype html>
-
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Angular Tree Menu </title>
+  <title>Angular Tree Menu</title>
   <meta name="description" content="Angular Tree Menu">
   <meta name="author" content="Liutauras Medziunas">
-
+  
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="libs/angular-ui-tree/dist/angular-ui-tree.min.css">
   <link rel="stylesheet" href="css/styles.css">
-</head>
 
-<body>
-  <script src="js/app.js"></script>
-</body>
+</head>
+    <body>
+        <div ng-app="app">
+            <div ng-controller="treeCtrl">
+                <h1 class="page-header">Tree</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>
+                            Tree view
+                            <a href="" class="btn btn-default pull-right" ng-click="collapseAll()">Collapse all</a>
+                            <a href="" class="btn btn-default pull-right" ng-click="expandAll()">Expand all</a>
+                        </h3>
+                        <div ui-tree id="tree-root">
+                            <ol ui-tree-nodes="" ng-model="data">
+                                <li ng-repeat="node in data" ui-tree-node ng-include="'js/templates/nodes_renderer.html'"></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h3>Contant</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="libs/jquery/dist/jquery.js"></script>
+        <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="libs/angular/angular.js"></script>
+        <script src="libs/angular-ui-tree/dist/angular-ui-tree.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
