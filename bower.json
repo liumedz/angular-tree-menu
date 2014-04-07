@@ -1,0 +1,22 @@
+{
+  "name": "tree-menu",
+  "version": "0.0.1",
+  "authors": [
+    "Liutauras Medziunas <liutauras.medziunas@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "angular": "~1.2.16",
+    "angular-ui-chart": "~0.0.1",
+    "ui.bootstrap": "~0.10.0"
+  }
+}
